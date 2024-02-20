@@ -1,0 +1,21 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int n;
+    cout << "Enter Class strength ";
+    cin >> n;
+    double arr[n], sum = 0, avg; // Declaring as ‘double’ to avoid segmentation error
+    cout << "\n Enter Class Marks:";
+
+    for (int i = 0; i < n; i++) {
+        cout << "\n Enter marks of student " << i + 1 << ": ";
+        cin >> arr[i];
+        sum += arr[i];
+    }
+    avg = sum / n;
+
+    cout << "\n The total marks obtained by the class is: " << sum;
+    cout << "\n Class average: " << avg;
+    return 0;
+}
